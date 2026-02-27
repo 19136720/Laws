@@ -1,0 +1,32 @@
+body{
+    color:firebrick;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: coral;
+}
+#high-feedback{
+    color: rgb(99, 133, 20);
+}
+#medium-feedback{
+    color: rgb(255, 174, 0);
+}
+#low-feedback{
+    color: rgb(241, 9, 9);
+}
+#thank-you-img{
+    border-radius: 10px;
+}
+.link{
+    color: rgb(70, 86, 212);
+}
+input[type="radio"]{
+    color: coral;
+    accent-color: firebrick;
+}
+select,button{
+    background-color: firebrick;
+    color: coral;
+}
+section{
+    border-radius: 10px;
+    background-color: rgb(240, 114, 79);
+}

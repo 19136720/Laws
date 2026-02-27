@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LawsQuiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body id="body">
+<h1>Quiz</h1>
+<section>
+<ol>
+    <section>
+        <h2>DPA</h2>
+<li class="question">
+  <p>Select the sensitiive data</p>
+            <label>
+                <input type="radio" value="incorrect"  name="q1" class="answer1 radio" />
+                Banking details
+            </label><br>
+            <label>
+                <input type="radio" value="correct"  name="q1" class="answer1 radio"/>
+                Nationality
+            </label><br>
+            <label>
+                <input type="radio" value="incorrect"  name="q1" class="answer1 radio"/>
+                Date of birth
+            </label>
+            <div id="results1"></div>
+          </li>
+<li class="question">
+  <p>select the term for a person whos data is being stored</p>
+  <select class="answer2 select">
+<option value="" selected disabled>-- choose an option --</option>
+<option value="incorrect">Data target</option>
+<option value="incorrect">Data controller</option>
+<option value="correct">Data subject</option>
+  </select>
+  <div id="results2"></div>
+</li>
+<li class="question">
+<p>select which is a principle of data protection</p>
+<label>
+  <input type="radio" value="incorrect"  name="q3" class="answer3 radio"/>
+                Personal data cannot be stored
+</label><br>
+<label>
+  <input type="radio" value="incorrect"  name="q3" class="answer3 radio"/>
+                Data can be kept indefinitley if it is safe and secure
+</label><br>
+<label>
+  <input type="radio" value="correct" name="q3" class="answer3 radio"/>
+                Data must be kept accurate and up to date
+</label><br>
+<div id="results3"></div>
+</li>
+</section>
+<section>
+    <h2>CMA</h2>
+    <li class="question">
+  <p>True or false. Unnauthorised access to a computer isnt ilegal unless its to facilitate further crime:</p>
+            <label>
+                <input type="radio" value="incorrect"  name="q4" class="answer4 radio" />
+                True
+            </label><br>
+            <label>
+                <input type="radio" value="correct"  name="q4" class="answer4 radio"/>
+                False
+            </label><br>
+            <div id="results4"></div>
+          </li>
+<li class="question">
+<p>True or false. You can be convicted for making tools that can be used for CMA offences even if you dont use or distrubute them</p>
+<label>
+  <input type="radio" value="correct"  name="q5" class="answer5 radio"/>
+                True
+</label><br>
+<label>
+  <input type="radio" value="incorrect"  name="q5" class="answer5 radio"/>
+                False
+</label><br>
+<div id="results5"></div>
+</li>
+</section>
+<section>
+    <h2>CDPA</h2>
+    <li class="question">
+  <p>Can ideas be protected </p>
+            <label>
+                <input type="radio" value="incorrect"  name="q6" class="answer6 radio" />
+                Yes if its an original idea
+            </label><br>
+            <label>
+                <input type="radio" value="correct"  name="q6" class="answer6 radio"/>
+                Only if its original and in a specific fields
+            </label><br>
+            <label>
+                <input type="radio" value="incorrect"  name="q6" class="answer6 radio"/>
+                No only indications of a commercial source and original works
+            </label>
+            <div id="results6"></div>
+          </li>
+<li class="question">
+  <p>What are original works protected by</p>
+  <select class="answer7 select">
+<option value="" selected disabled>-- choose an option --</option>
+<option value="correct">Copyrights</option>
+<option value="incorrect">Patents</option>
+<option value="incorrect">Trademarks</option>
+<option value="incorrect">All of the above</option>
+  </select>
+  <div id="results7"></div>
+</li>
+</section>
+<section>
+    <h2>RIPA</h2>
+    <li class="question">
+  <p>True or false. The RIPA limits electronic surveillance and investigatory authority to the police.</p>
+            <label>
+                <input type="radio" value="incorrect"  name="q8" class="answer8 radio" />
+                True
+            </label><br>
+            <label>
+                <input type="radio" value="correct"  name="q8" class="answer8 radio"/>
+                False
+            </label><br>
+            <div id="results8"></div>
+          </li>
+<li class="question">
+<p>True or False. RIPA permits mass untargeted collection of digital communications by specific public bodies.</p>
+<label>
+  <input type="radio" value="correct"  name="q9" class="answer9 radio"/>
+                True
+</label><br>
+<label>
+  <input type="radio" value="incorrect"  name="q9" class="answer9 radio"/>
+                False
+</label><br>
+<div id="results9"></div>
+</li>
+</ol>
+    <button id="mark-quiz" onclick="markQuiz2()">submit</button>
+<div id="results"></div>
+</section>
+<section>
+<p>Please select how fun and informative this web page has been:</p>
+<ul>
+  <li id="high-feedback"onclick="surveyResponse('medium-feedback', 'low-feedback','high-feedback')"><strong>Extremely</strong> fun and informative</li>
+  <li id="medium-feedback" onclick="surveyResponse('high-feedback', 'low-feedback')"><strong>Mildly</strong> fun and informative</li>
+  <li id="low-feedback" onclick="alert('Goodbye!'), surveyResponse('high-feedback', 'medium-feedback','low-feedback')"><strong>Not</strong> fun and informative</li>
+</ul>
+<div id='thank-you'></div>
+</section>
+</body>
