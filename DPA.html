@@ -80,50 +80,59 @@
 <section>
 <h2>Quiz</h2>
 <ol>
+<!-- <li class="question">  -->
+<!-- <p>select which is a data subjects right</p>
+</li> -->
+<section id="q1">
 <li class="question">
-  <p>Select the sensitive data</p>
+  <p>Select the sensitiive data</p>
             <label>
-                <input type="radio" value="incorrect"  name="q1" class="answer radio" />
+                <input type="radio" value="incorrect"  name="q1" class="answer1 radio" />
                 Banking details
             </label><br>
             <label>
-                <input type="radio" value="correct"  name="q1" class="answer radio"/>
+                <input type="radio" value="correct"  name="q1" class="answer1 radio"/>
                 Nationality
             </label><br>
             <label>
-                <input type="radio" value="incorrect"  name="q1" class="answer radio"/>
+                <input type="radio" value="incorrect"  name="q1" class="answer1 radio"/>
                 Date of birth
             </label>
+            <div id="results1"></div>
           </li>
+          </section>
+          <section id="q2">
 <li class="question">
   <p>select the term for a person whos data is being stored</p>
-  <select class="answer select">
+  <select class="answer2 select">
 <option value="" selected disabled>-- choose an option --</option>
 <option value="incorrect">Data target</option>
 <option value="incorrect">Data controller</option>
 <option value="correct">Data subject</option>
   </select>
+  <div id="results2"></div>
 </li>
+</section>
+<section id="q3">
 <li class="question">
 <p>select which is a principle of data protection</p>
 <label>
-  <input type="radio" value="incorrect"  name="q3" class="answer radio"/>
+  <input type="radio" value="incorrect"  name="q3" class="answer3 radio"/>
                 Personal data cannot be stored
 </label><br>
 <label>
-  <input type="radio" value="incorrect"  name="q3" class="answer radio"/>
+  <input type="radio" value="incorrect"  name="q3" class="answer3 radio"/>
                 Data can be kept indefinitley if it is safe and secure
 </label><br>
 <label>
-  <input type="radio" value="correct" name="q3" class="answer radio"/>
+  <input type="radio" value="correct" name="q3" class="answer3 radio"/>
                 Data must be kept accurate and up to date
 </label><br>
+<div id="results3"></div>
 </li>
-<!--<li class="question">
-<p>select which is a data subjects right</p>
-</li>-->
+</section>
 </ol>
-    <button id="mark-quiz" onclick="markQuiz()">submit</button>
+    <button id="mark-quiz" onclick="markQuiz2()">submit</button>
 <div id="results"></div>
 </section>
 <section>

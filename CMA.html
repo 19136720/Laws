@@ -43,30 +43,36 @@
 <section>
 <h2>Quiz</h2>
 <ol>
-<li class="question">
+<section id="q1">
+    <li class="question">
   <p>True or false. Unnauthorised access to a computer isnt ilegal unless its to facilitate further crime:</p>
             <label>
-                <input type="radio" value="incorrect"  name="q1" class="answer radio" />
+                <input type="radio" value="incorrect"  name="q1" class="answer1 radio" />
                 True
             </label><br>
             <label>
-                <input type="radio" value="correct"  name="q1" class="answer radio"/>
+                <input type="radio" value="correct"  name="q1" class="answer1 radio"/>
                 False
             </label><br>
+            <div id="results1"></div>
           </li>
+          </section>
+          <section id="q2">
 <li class="question">
 <p>True or false. You can be convicted for making tools that can be used for CMA offences even if you dont use or distrubute them</p>
 <label>
-  <input type="radio" value="correct"  name="q2" class="answer radio"/>
+  <input type="radio" value="correct"  name="q2" class="answer2 radio"/>
                 True
 </label><br>
 <label>
-  <input type="radio" value="incorrect"  name="q2" class="answer radio"/>
+  <input type="radio" value="incorrect"  name="q2" class="answer2 radio"/>
                 False
 </label><br>
+<div id="results2"></div>
 </li>
+</section>
 </ol>
-    <button id="mark-quiz" onclick="markQuiz()">submit</button>
+    <button id="mark-quiz" onclick="markQuiz2()">submit</button>
 <div id="results"></div>
 </section>
 <section>

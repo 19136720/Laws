@@ -75,33 +75,39 @@
   <section>
 <h2>Quiz</h2>
 <ol>
-<li class="question">
+ <section id="q1">
+    <li class="question">
   <p>Can ideas be protected </p>
             <label>
-                <input type="radio" value="incorrect"  name="q1" class="answer radio" />
+                <input type="radio" value="incorrect"  name="q1" class="answer1 radio" />
                 Yes if its an original idea
             </label><br>
             <label>
-                <input type="radio" value="correct"  name="q1" class="answer radio"/>
+                <input type="radio" value="correct"  name="q1" class="answer1 radio"/>
                 Only if its original and in a specific fields
             </label><br>
             <label>
-                <input type="radio" value="incorrect"  name="q1" class="answer radio"/>
+                <input type="radio" value="incorrect"  name="q1" class="answer1 radio"/>
                 No only indications of a commercial source and original works
             </label>
+            <div id="results1"></div>
           </li>
+          </section>
+          <section id="q2">
 <li class="question">
   <p>What are original works protected by</p>
-  <select class="answer select">
+  <select class="answer2 select">
 <option value="" selected disabled>-- choose an option --</option>
 <option value="correct">Copyrights</option>
 <option value="incorrect">Patents</option>
 <option value="incorrect">Trademarks</option>
 <option value="incorrect">All of the above</option>
   </select>
+  <div id="results2"></div>
 </li>
+</section>
 </ol>
-    <button id="mark-quiz" onclick="markQuiz()">submit</button>
+    <button id="mark-quiz" onclick="markQuiz2()">submit</button>
 <div id="results"></div>
 </section>
 <section>
