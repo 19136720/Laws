@@ -30,7 +30,9 @@ function markQuiz2() {
     for(let i=0; i<answers.length; i++){if (answers[i].value !=""){answerLength++};}
     if (answerLength < questions.length){document.getElementById("results").innerHTML = ( `Error ${questions.length-answerLength} question not answered. Please answer all the questions`)}
     else {for(let i=0; i<answers.length; i++){let tempscore=0;
-         if (answers[i].value ==="correct") {score++; tempscore++;};
+        document.getElementById(`q${i+1}`).className = "incorrect";
+        if (answers[i].value ==="correct") {score++; tempscore++;
+           document.getElementById(`q${i+1}`).className = "correct"};
         document.getElementById(`results${i+1}`).innerHTML = ( `Score: ${tempscore} / 1`)}
     document.getElementById("results").innerHTML = ( `Score: ${score} / ${questions.length}`)}
 }

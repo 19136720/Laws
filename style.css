@@ -30,3 +30,11 @@ section{
     border-radius: 10px;
     background-color: rgb(240, 114, 79);
 }
+.incorrect{
+    background-color: rgb(231, 73, 61);
+    color: rgb(139, 5, 5);
+}
+.correct{
+    background-color: rgb(132, 161, 85);
+    color:rgb(56, 75, 12);
+}
