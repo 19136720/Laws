@@ -22,3 +22,12 @@ function markQuiz() {
     for(let i=0; i<selects.length; i++){if (selects[i].value ==="correct") {score++};}   
     document.getElementById("results").innerHTML = ( `Score: ${score} / ${questions.length}`)
 }
+function markQuiz2() {
+    let tempscore = 0;
+    let questions = document.getElementsByClassName("question");
+    let answers = document.querySelectorAll(".radio:checked, .select");
+    for(let i=0; i<answers.length; i++){let tempscore=0;
+         if (answers[i].value ==="correct") {score++; tempscore++;};
+        document.getElementById(`results${i+1}`).innerHTML = ( `Score: ${tempscore} / 1`)}
+    document.getElementById("results").innerHTML = ( `Score: ${score} / ${questions.length}`)
+}
